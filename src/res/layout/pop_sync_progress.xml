@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLLinearLayout android:orientation="vertical" android:tag="layout/pop_sync_progress_0" android:padding="24.0dip" android:layout_width="@dimen/dp_300" android:layout_height="wrap_content" app:bl_corners_radius="@dimen/dp_16" app:bl_solid_color="@color/white"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text1" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/home_noise_syncing_earphones" android:lineSpacingExtra="4.0dip" />
+    <ProgressBar android:id="@id/pb_sync" android:layout_width="fill_parent" android:layout_height="@dimen/dp_8" android:layout_marginTop="@dimen/dp_24" android:max="100" android:progress="0" android:progressDrawable="@drawable/layer_progress_orange" style="?android:progressBarStyleHorizontal" />
+</com.noober.background.view.BLLinearLayout>

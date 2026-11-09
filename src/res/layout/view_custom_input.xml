@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/view_custom_input_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/dp_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText android:textSize="@dimen/sp_16" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/etInput" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" android:paddingEnd="@dimen/dp_16" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/ivClear" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ic_delete" />
+</LinearLayout>

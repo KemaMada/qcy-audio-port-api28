@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLLinearLayout android:gravity="center" android:orientation="vertical" android:tag="layout/pop_confirm_layout_0" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bl_corners_radius="@dimen/dp_16" app:bl_solid_color="@color/color_card"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text1" android:id="@id/tv_title" android:padding="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_16" />
+    <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text1" android:id="@id/tv_content" android:padding="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_16" />
+    <View android:background="@color/color_divline" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_46">
+        <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text3" android:gravity="center" android:id="@id/tv_cancel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_accent1" android:gravity="center" android:id="@id/tv_confirm" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:layout_weight="1.0" />
+    </LinearLayout>
+</com.noober.background.view.BLLinearLayout>

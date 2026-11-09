@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_pc_view2_0" android:paddingTop="@dimen/dp_24" android:paddingBottom="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp_16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text1" android:id="@id/name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/color_text3" android:id="@id/describe_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/name_text" />
+        <ImageView android:id="@id/edit_imageview" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" app:layout_constraintBottom_toBottomOf="@id/name_text" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/name_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

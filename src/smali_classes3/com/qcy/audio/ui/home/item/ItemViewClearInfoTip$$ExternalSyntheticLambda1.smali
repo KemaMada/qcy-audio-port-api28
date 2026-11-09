@@ -1,0 +1,36 @@
+.class public final synthetic Lcom/qcy/audio/ui/home/item/ItemViewClearInfoTip$$ExternalSyntheticLambda1;
+.super Ljava/lang/Object;
+.source "D8$$SyntheticClass"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field public final synthetic f$0:Lcom/qcy/audio/ui/home/item/ItemViewClearInfoTip;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/qcy/audio/ui/home/item/ItemViewClearInfoTip;)V
+    .locals 0
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/qcy/audio/ui/home/item/ItemViewClearInfoTip$$ExternalSyntheticLambda1;->f$0:Lcom/qcy/audio/ui/home/item/ItemViewClearInfoTip;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 0
+
+    .line 0
+    iget-object p0, p0, Lcom/qcy/audio/ui/home/item/ItemViewClearInfoTip$$ExternalSyntheticLambda1;->f$0:Lcom/qcy/audio/ui/home/item/ItemViewClearInfoTip;
+
+    invoke-static {p0, p1}, Lcom/qcy/audio/ui/home/item/ItemViewClearInfoTip;->$r8$lambda$4Gp0pU9FhIHPykG84sJxDDrPAqQ(Lcom/qcy/audio/ui/home/item/ItemViewClearInfoTip;Landroid/view/View;)V
+
+    return-void
+.end method

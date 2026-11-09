@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/view_home_anc_0" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content" fresco:bl_corners_radius="@dimen/dp_16" fresco:bl_solid_color="@color/color_card"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/color_text1" android:layout_gravity="center_vertical" android:id="@id/title_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/aianc_flag" android:visibility="gone" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/icon_aianc_flag" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/model_recycler" android:layout_width="fill_parent" android:layout_height="@dimen/dp_80" android:layout_marginTop="@dimen/dp_16" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_scene" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+        <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_aianc_scene" />
+        <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text3" android:gravity="center|right" android:id="@id/tv_scene" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawablePadding="@dimen/dp_8" android:layout_weight="1.0" android:drawableEnd="@drawable/ic_arrow_right" android:paddingVertical="@dimen/dp_8" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/voice_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+        <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_anc_voice" />
+        <Space android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <com.qcy.audio.widget.SwitchButton2 android:layout_gravity="end|center" android:id="@id/voice_switch" android:layout_width="@dimen/dp_32" android:layout_height="wrap_content" fresco:layout_constraintEnd_toEndOf="parent" fresco:layout_constraintTop_toTopOf="@id/tv_title" />
+    </LinearLayout>
+    <com.qcy.audio.widget.AncNoiseLevelSeekBar android:id="@id/seekbar_noise" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" android:layout_marginTop="@dimen/dp_24" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layotu_noise_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp_8">
+        <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/home_aianc_lev0" fresco:layout_constraintStart_toStartOf="parent" fresco:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/home_aianc_lev1" fresco:layout_constraintEnd_toEndOf="parent" fresco:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.qcy.audio.widget.RulerView android:id="@id/custom_ruler" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56" android:layout_marginTop="@dimen/dp_24" android:paddingHorizontal="@dimen/dp_16" android:paddingVertical="@dimen/dp_8" fresco:bl_corners_radius="@dimen/dp_16" fresco:bl_solid_color="@color/color_bg" />
+    <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text1" android:gravity="center" android:id="@id/tv_custom_name" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/env_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24">
+        <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text1" android:id="@id/env_titleview" android:layout_width="0.0dip" android:layout_height="wrap_content" fresco:layout_constraintEnd_toStartOf="@id/env_switch" fresco:layout_constraintStart_toStartOf="parent" fresco:layout_constraintTop_toTopOf="parent" />
+        <com.qcy.audio.widget.SwitchButton2 android:id="@id/env_switch" android:layout_width="@dimen/dp_32" android:layout_height="wrap_content" fresco:layout_constraintBottom_toBottomOf="@id/env_titleview" fresco:layout_constraintEnd_toEndOf="parent" fresco:layout_constraintTop_toTopOf="@id/env_titleview" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

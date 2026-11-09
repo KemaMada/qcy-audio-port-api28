@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_accent1">#ff3399ff</color>
+    <color name="color_alpha_text1">#33ffffff</color>
+    <color name="color_bg">#ff121212</color>
+    <color name="color_card">#ff1e1e1e</color>
+    <color name="color_card2">#08ffffff</color>
+    <color name="color_error_notice">#ffffffff</color>
+    <color name="color_float">#ff1e1e1e</color>
+    <color name="color_input">#26ffffff</color>
+    <color name="color_line">#0dffffff</color>
+    <color name="color_overlay">#99000000</color>
+    <color name="color_ripple">#1a2d384f</color>
+    <color name="color_text1">#ffffffff</color>
+    <color name="color_text2">#ccffffff</color>
+    <color name="color_text3">#80ffffff</color>
+    <color name="color_warning_notice">#ff561515</color>
+</resources>

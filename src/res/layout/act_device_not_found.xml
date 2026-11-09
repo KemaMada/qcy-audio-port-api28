@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/act_device_not_found_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/dp_30" android:paddingVertical="@dimen/dp_37"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_24" android:textStyle="bold" android:textColor="@color/color_text1" android:id="@id/title_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/home_scan_cannot_find_device" />
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/color_text1" android:id="@id/content_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_36" android:text="@string/home_scan_devicenotfound_content1" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.noober.background.view.BLTextView android:textSize="@dimen/sp_15" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_feedback" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mine_feedback" android:textAllCaps="false" android:paddingVertical="@dimen/dp_14" app:bl_corners_radius="@dimen/dp_12" app:bl_solid_color="@color/color_brand_primary" />
+</LinearLayout>

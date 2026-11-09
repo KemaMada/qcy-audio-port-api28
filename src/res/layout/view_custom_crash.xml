@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/nsv_view" android:tag="layout/view_custom_crash_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_15" android:layout_marginHorizontal="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_crash_info" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="@color/black80" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="详细信息  (请长截图并联系开发者)" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_14" android:textColor="@color/black60" android:id="@id/tv_crash_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/dp_5" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/sp_15" android:textColor="#ffff4444" android:id="@id/tv_crash_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/dp_5" android:layout_marginHorizontal="@dimen/dp_16" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

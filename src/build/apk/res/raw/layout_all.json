@@ -1,0 +1,250 @@
+[
+  {
+    "name": "设备使用教程",
+    "type": 1001,
+    "funKey": "instructionManual"
+  },
+  {
+    "name": "清洁耳机",
+    "type": 10,
+    "funKey": "clearInfo"
+  },
+  {
+    "name": "THX调音",
+    "type": 4,
+    "funKey": "thxEq"
+  },
+  {
+    "name": "AI降噪",
+    "type": 14,
+    "funKey": "aiANC"
+  },
+  {
+    "name": "降噪模式",
+    "type": 9,
+    "funKey": "ancModel"
+  },
+  {
+    "name": "聆听模式",
+    "type": 11,
+    "funKey": "musicMode"
+  },
+  {
+    "name": "音效",
+    "type": 2,
+    "funKey": "eqModel"
+  },
+  {
+    "name": "手势",
+    "type": 2,
+    "funKey": "buttonModel"
+  },
+  {
+    "name": "查找耳机",
+    "type": 2,
+    "funKey": "findEar"
+  },
+  {
+    "name": "",
+    "type": 2,
+    "subItems": [
+      {
+        "name": "声道平衡",
+        "type": 6,
+        "funKey": "balanceModel"
+      },
+      {
+        "name": "风噪检测",
+        "type": 4,
+        "funKey": "windNoise"
+      },
+      {
+        "name": "LEAudio",
+        "type": 4,
+        "funKey": "leAudio"
+      },
+      {
+        "name": "disconnectWarn",
+        "type": 4,
+        "funKey": "disconnectWarn"
+      },
+      {
+        "name": "贴合度测试",
+        "type": 7,
+        "funKey": "fitTest"
+      },
+      {
+        "name": "触摸灵敏度",
+        "type": 7,
+        "funKey": "touchSensitivity"
+      },
+      {
+        "name": "",
+        "type": 12,
+        "subItems": [
+          {
+            "name": "提示音语言",
+            "type": 7,
+            "funKey": "promptModel"
+          },
+          {
+            "name": "提示音音量",
+            "type": 7,
+            "funKey": "promptVolume"
+          }
+        ]
+      },
+      {
+        "name": "",
+        "type": 12,
+        "subItems": [
+          {
+            "name": "断连后关机",
+            "type": 7,
+            "funKey": "disconnectPowerOff"
+          },
+          {
+            "name": "定时关机",
+            "type": 7,
+            "funKey": "autoPowerOff"
+          },
+          {
+            "name": "设备颜色",
+            "type": 7,
+            "funKey": "deviceColor"
+          },
+          {
+            "name": "设备名称",
+            "type": 7,
+            "funKey": "deviceName"
+          }
+        ]
+      },
+      {
+        "name": "",
+        "type": 12,
+        "subItems": [
+          {
+            "name": "固件升级",
+            "type": 7,
+            "funKey": "upgrade"
+          },
+          {
+            "name": "恢复默认",
+            "type": 7,
+            "funKey": "resetModel"
+          },
+          {
+            "name": "恢复出厂设置",
+            "type": 7,
+            "funKey": "factorySetModel"
+          },
+          {
+            "name": "清除配对",
+            "type": 7,
+            "funKey": "clearPairModel"
+          },
+          {
+            "name": "设备信息",
+            "type": 7,
+            "funKey": "deviceInfo"
+          }
+        ]
+      }
+    ],
+    "funKey": "setting"
+  },
+  {
+    "name": "AI",
+    "type": 3,
+    "funKey": "aiModel"
+  },
+  {
+    "name": "头部控制",
+    "type": 7,
+    "funKey": "headControl"
+  },
+  {
+    "name": "LDAC",
+    "type": 4,
+    "funKey": "ldacModel"
+  },
+  {
+    "name": "空间音效",
+    "type": 4,
+    "funKey": "spaceAudio"
+  },
+  {
+    "name": "空间音频",
+    "type": 7,
+    "funKey": "spatialAudio"
+  },
+  {
+    "name": "动态EQ",
+    "type": 4,
+    "funKey": "adaptEQ"
+  },
+  {
+    "name": "低音增强",
+    "type": 4,
+    "funKey": "bassEnhancement"
+  },
+  {
+    "name": "自适应音量",
+    "type": 4,
+    "funKey": "autoVolume"
+  },
+
+  {
+    "name": "听力健康",
+    "type": 7,
+    "funKey": "hearingSafety"
+  },
+  {
+    "name": "游戏模式",
+    "type": 4,
+    "funKey": "gameMode"
+  },
+  {
+    "name": "游戏模式",
+    "type": 13,
+    "funKey": "gameModePro"
+  },
+  {
+    "name": "省电模式",
+    "type": 4,
+    "funKey": "powerSavingMode"
+  },
+  {
+    "name": "专注模式",
+    "type": 5,
+    "funKey": "whiteNoise"
+  },
+  {
+    "name": "佩戴检测",
+    "type": 7,
+    "funKey": "inEarCheck"
+  },
+  {
+    "name": "隐私模式",
+    "type": 17,
+    "funKey": "privacyModePro"
+  },
+  {
+    "name": "对话感知",
+    "type": 4,
+    "funKey": "dialoguePerception"
+  },
+  {
+    "name": "双设备连接",
+    "type": 4,
+    "funKey": "dualConnect"
+  },
+  {
+    "name": "多设备连接",
+    "type": 7,
+    "funKey": "multiConnect"
+  }
+
+
+]

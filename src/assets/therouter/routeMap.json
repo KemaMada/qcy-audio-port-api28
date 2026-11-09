@@ -1,0 +1,448 @@
+[
+  {
+    "path": "/scan/scanDevice",
+    "className": "com.qcy.audio.ui.scan.ScanActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/scan/pairEarphone",
+    "className": "com.qcy.audio.ui.scan.PairEarphoneActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/scan/deviceTypeList",
+    "className": "com.qcy.audio.ui.product.DeviceTypeListActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/scan/deviceType",
+    "className": "com.qcy.audio.ui.product.DeviceTypeActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/scan/deviceNotFound",
+    "className": "com.qcy.audio.ui.product.DeviceNotFoundActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/scan/bindingSteps",
+    "className": "com.qcy.audio.ui.product.BindingStepsActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/mine/videoTutorialList",
+    "className": "com.qcy.audio.ui.mine.VideoTutorialListActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/mine/videoTutorial",
+    "className": "com.qcy.audio.ui.mine.VideoTutorialActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/mine/themeMode",
+    "className": "com.qcy.audio.ui.mine.ThemeActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/mine",
+    "className": "com.qcy.audio.ui.mine.MineActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/mine/feedback",
+    "className": "com.qcy.audio.ui.mine.FeedbackActivity",
+    "action": "",
+    "description": "",
+    "params": {
+      "needLogin": "true"
+    }
+  },
+  {
+    "path": "/mine/feedback/device",
+    "className": "com.qcy.audio.ui.mine.FeedDevicesActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/mine/customInput",
+    "className": "com.qcy.audio.ui.mine.CustomInputActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/mine/appLanguage",
+    "className": "com.qcy.audio.ui.mine.AppLanguageActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/mine/account",
+    "className": "com.qcy.audio.ui.mine.AccountActivity",
+    "action": "",
+    "description": "",
+    "params": {
+      "needLogin": "true"
+    }
+  },
+  {
+    "path": "/mine/about",
+    "className": "com.qcy.audio.ui.mine.AboutActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/verifyCode",
+    "className": "com.qcy.audio.ui.login.VerifyCodeActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/settingPwd",
+    "className": "com.qcy.audio.ui.login.SettingPwdActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/loginPwd",
+    "className": "com.qcy.audio.ui.login.LoginPwdActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/login",
+    "className": "com.qcy.audio.ui.login.LoginActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/changeAccount",
+    "className": "com.qcy.audio.ui.login.ChangeAccountActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/bindAccount",
+    "className": "com.qcy.audio.ui.login.BindAccountActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deleteAccount",
+    "className": "com.qcy.audio.ui.login.AccountDeleteActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/whiteNoise",
+    "className": "com.qcy.audio.ui.home.WhiteNoiseActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceTouch",
+    "className": "com.qcy.audio.ui.home.TouchBtnActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceSpatialAudio",
+    "className": "com.qcy.audio.ui.home.SpatialAudioActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/devicePowerManager",
+    "className": "com.qcy.audio.ui.home.PowerManagerActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/devicePairName",
+    "className": "com.qcy.audio.ui.home.PairNameActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceOTA/OnlyOTADevice",
+    "className": "com.qcy.audio.ui.home.OnlyOTADeviceActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceOTA",
+    "className": "com.qcy.audio.ui.home.OTAActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceMultiConfig",
+    "className": "com.qcy.audio.ui.home.MultiConfigActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceSingItemSelect",
+    "className": "com.qcy.audio.ui.home.ItemSelectActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceInearConfig",
+    "className": "com.qcy.audio.ui.home.InearConfigActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceHome",
+    "className": "com.qcy.audio.ui.home.HomeActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceHearingSafety",
+    "className": "com.qcy.audio.ui.home.HearingSafetyActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceHeadActionConfig",
+    "className": "com.qcy.audio.ui.home.HeadActionActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceFitTest",
+    "className": "com.qcy.audio.ui.home.FitTestActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/earphones/findearphones",
+    "className": "com.qcy.audio.ui.home.FindEarphonesActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceMoreItems",
+    "className": "com.qcy.audio.ui.home.EarMoreItemActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceEQEdit",
+    "className": "com.qcy.audio.ui.home.EQEditActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceAddEQNew",
+    "className": "com.qcy.audio.ui.home.EQCustomNewActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceAddEQ",
+    "className": "com.qcy.audio.ui.home.EQCustomActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceAddEQ20",
+    "className": "com.qcy.audio.ui.home.EQCustom20Activity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceEQ",
+    "className": "com.qcy.audio.ui.home.EQActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceDualConfig",
+    "className": "com.qcy.audio.ui.home.DualConfigActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceList",
+    "className": "com.qcy.audio.ui.home.DeviceList2Activity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceInfo",
+    "className": "com.qcy.audio.ui.home.DeviceInfoActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceComItemSelect",
+    "className": "com.qcy.audio.ui.home.ComItemSelectActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceColor",
+    "className": "com.qcy.audio.ui.home.ColorSelectActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceBtnAncCfg",
+    "className": "com.qcy.audio.ui.home.BtnAncCFGActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceAiAncStatus",
+    "className": "com.qcy.audio.ui.home.AIAncStatusActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/deviceAiAncConfig",
+    "className": "com.qcy.audio.ui.home.AIAncConfigActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/welcome",
+    "className": "com.qcy.audio.ui.WelcomeActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/web",
+    "className": "com.qcy.audio.ui.WebActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/aiRtAsrDetails",
+    "className": "com.qcy.audio.ai.rtasr.details.DetailsRtAsrActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/aiRtAsrList",
+    "className": "com.qcy.audio.ai.rtasr.RtAsrListActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/aiRtAsrAudio",
+    "className": "com.qcy.audio.ai.rtasr.RtAsrAudioActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/aiLLmChat",
+    "className": "com.qcy.audio.ai.llmchat.LLMChatActivity",
+    "action": "",
+    "description": "",
+    "params": {}
+  },
+  {
+    "path": "/aiVoiceTrans",
+    "className": "com.qcy.audio.ai.itrans.VoiceTranslateActivity2",
+    "action": "",
+    "description": "",
+    "params": {
+      "needLogin": "true"
+    }
+  },
+  {
+    "path": "/aiTextTrans",
+    "className": "com.qcy.audio.ai.itrans.TextTranslateActivity2",
+    "action": "",
+    "description": "",
+    "params": {
+      "needLogin": "true"
+    }
+  },
+  {
+    "path": "/aifacetalk",
+    "className": "com.qcy.audio.ai.facetalk.CommunicateActivity",
+    "action": "",
+    "description": "",
+    "params": {
+      "needLogin": "true"
+    }
+  },
+  {
+    "path": "/aiMain",
+    "className": "com.qcy.audio.ai.AiMainActivity",
+    "action": "",
+    "description": "",
+    "params": {
+      "needLogin": "true"
+    }
+  }
+]

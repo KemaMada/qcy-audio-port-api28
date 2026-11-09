@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.qcy.audio.google" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <uses-sdk android:minSdkVersion="28" android:targetSdkVersion="36"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" android:usesPermissionFlags="neverForLocation"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation"/>
+    <queries>
+        <package android:name="com.tencent.mm"/>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+        </intent>
+        <package android:name="com.google.android.apps.maps"/>
+    </queries>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <permission android:name="com.qcy.audio.google.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.qcy.audio.google.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:icon="@mipmap/ic_launcher" android:label="@string/txt_app_name" android:name="com.qcy.audio.QApp" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher" android:supportsRtl="true" android:theme="@style/Theme.Qcy" android:usesCleartextTraffic="true">
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyB9D05KYHsVDRfwyjGbvVK_5WRYfU0Dr14"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:exported="true" android:name="com.qcy.audio.ui.StartActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.WelcomeActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.qcy.audio.ui.home.DeviceListActivity"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.qcy.audio.ui.home.DeviceList2Activity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.mine.FeedDevicesActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:launchMode="singleTask" android:name="com.qcy.audio.ui.home.HomeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.mine.MineActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.mine.AccountActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.mine.CustomInputActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.mine.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.mine.FeedbackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.yalantis.ucrop.UCropActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.login.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.login.LoginPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.login.SettingPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.login.VerifyCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.login.BindAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.WebActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.login.AccountDeleteActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.EQActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.FindEarphonesActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.product.DeviceTypeListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.product.DeviceTypeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.EQEditActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.TouchBtnActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.EarMoreItemActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.FitTestActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.ItemSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.login.ChangeAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.mine.ThemeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.mine.AppLanguageActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.mine.VideoTutorialListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.mine.VideoTutorialActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.product.BindingStepsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.PowerManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.DeviceInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.scan.ScanActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.scan.PairEarphoneActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.InearConfigActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.PairNameActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.OTAActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.OnlyOTADeviceActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.WhiteNoiseActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.DualConfigActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.MultiConfigActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.product.DeviceNotFoundActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.HeadActionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.AIAncConfigActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.AIAncStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.SpatialAudioActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.HearingSafetyActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.ColorSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.qcy.audio.crash.CrashActivity" android:process=":crash" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.qcy.audio.ui.home.EQCustomActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.qcy.audio.ui.home.ComItemSelectActivity"/>
+        <activity android:name="com.qcy.audio.ui.home.EQCustom20Activity"/>
+        <activity android:name="com.qcy.audio.ui.home.BtnAncCFGActivity"/>
+        <activity android:name="com.qcy.audio.ui.home.EQCustomNewActivity"/>
+        <provider android:authorities="com.qcy.audio.google.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <provider android:authorities="com.qcy.audio.google.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="okhttp3.internal.platform.PlatformInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:enabled="true" android:exported="true" android:name="com.realsil.sdk.dfu.DfuService"/>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <activity android:name="com.lxj.xpopup.util.XPermission$PermissionActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.qcy.audio.google.therouter.TheRouteContentProvider" android:exported="false" android:name="com.therouter.InnerTheRouterContentProvider"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess" android:theme="@style/ActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:multiprocess="true" android:name="com.blankj.utilcode.util.UtilsTransActivity" android:theme="@style/ActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:authorities="com.qcy.audio.google.utilcode.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.blankj.utilcode.util.UtilsFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/util_code_provider_paths"/>
+        </provider>
+        <service android:exported="false" android:name="com.blankj.utilcode.util.MessengerUtils$ServerService">
+            <intent-filter>
+                <action android:name="com.qcy.audio.google.messenger"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder">
+            <meta-data android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY" android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.controllers.identityauth.HiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.controllers.identitycredentials.IdentityCredentialApiHiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.qcy.audio.google.AndroidAopContentProvider" android:exported="false" android:initOrder="100" android:multiprocess="true" android:name="com.flyjingfish.android_aop_core.AndroidAopContentProvider"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.qcy.audio.google.backgroundLibrary" android:exported="false" android:multiprocess="true" android:name="com.noober.background.BackgroundContentProvider"/>
+        <provider android:authorities="com.qcy.audio.google.AgentWebFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.just.agentweb.AgentWebFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/web_files_public"/>
+        </provider>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

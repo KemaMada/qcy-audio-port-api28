@@ -1,0 +1,79 @@
+.class public Lcom/jieli/jl_bt_rcsp/data/model/response/GetDevMD5Response;
+.super Lcom/jieli/jl_bt_rcsp/data/model/base/CommonResponse;
+.source "GetDevMD5Response.java"
+
+
+# instance fields
+.field private md5:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .line 15
+    invoke-direct {p0}, Lcom/jieli/jl_bt_rcsp/data/model/base/CommonResponse;-><init>()V
+
+    .line 16
+    invoke-virtual {p0, p1}, Lcom/jieli/jl_bt_rcsp/data/model/response/GetDevMD5Response;->setMd5(Ljava/lang/String;)Lcom/jieli/jl_bt_rcsp/data/model/response/GetDevMD5Response;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getMd5()Ljava/lang/String;
+    .locals 0
+
+    .line 20
+    iget-object p0, p0, Lcom/jieli/jl_bt_rcsp/data/model/response/GetDevMD5Response;->md5:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public setMd5(Ljava/lang/String;)Lcom/jieli/jl_bt_rcsp/data/model/response/GetDevMD5Response;
+    .locals 0
+
+    .line 24
+    iput-object p1, p0, Lcom/jieli/jl_bt_rcsp/data/model/response/GetDevMD5Response;->md5:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    .line 30
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "GetDevMD5Response{md5=\'"
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v1, p0, Lcom/jieli/jl_bt_rcsp/data/model/response/GetDevMD5Response;->md5:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, "\'} "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    .line 32
+    invoke-super {p0}, Lcom/jieli/jl_bt_rcsp/data/model/base/CommonResponse;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method

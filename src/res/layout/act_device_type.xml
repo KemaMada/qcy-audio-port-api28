@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/main" android:tag="layout/act_device_type_0" android:background="@color/color_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_device_list" android:paddingTop="@dimen/dp_10" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:paddingHorizontal="@dimen/dp_8" app:layout_constraintBottom_toTopOf="@id/tv_cant_find" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text1" android:id="@id/tv_cant_find" android:padding="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_24" android:text="@string/home_scan_cannot_find_device" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

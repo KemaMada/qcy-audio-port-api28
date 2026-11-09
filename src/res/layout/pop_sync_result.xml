@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLLinearLayout android:orientation="vertical" android:tag="layout/pop_sync_result_0" android:layout_width="@dimen/dp_300" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp_24" app:bl_corners_radius="@dimen/dp_16" app:bl_solid_color="@color/white"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text1" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/home_noise_syns_succ" android:lineSpacingExtra="4.0dip" android:layout_marginVertical="@dimen/dp_24" />
+    <View android:background="@color/color_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/color_text1" android:gravity="center" android:id="@id/tv_confirm" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/home_noise_good" android:paddingVertical="@dimen/dp_16" />
+</com.noober.background.view.BLLinearLayout>

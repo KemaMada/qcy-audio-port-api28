@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLFrameLayout android:tag="layout/item_feedback_image_0" android:layout_width="@dimen/dp_82" android:layout_height="@dimen/dp_82" app:bl_corners_radius="@dimen/dp_8" app:bl_solid_color="@color/color_card"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="start|bottom|center" android:id="@id/iv_photo" android:layout_width="@dimen/dp_76" android:layout_height="@dimen/dp_76" android:scaleType="centerCrop" />
+    <ImageView android:layout_gravity="end|center|top" android:id="@id/iv_delete" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:src="@drawable/ic_feedback_delete" />
+</com.noober.background.view.BLFrameLayout>

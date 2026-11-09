@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/root_layout" android:tag="layout/act_account_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="@dimen/dp_26" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/dp_16">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_avatar" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_26">
+            <ImageView android:id="@id/iv_avatar" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_100" android:src="@drawable/ic_me_avatar" android:scaleType="centerCrop" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <ImageView android:id="@id/iv_avatar_edit" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:src="@drawable/ic_account_edit" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.noober.background.view.BLLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_26" android:paddingHorizontal="@dimen/dp_16" app:bl_corners_radius="@dimen/dp_12" app:bl_solid_color="@color/color_card">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lly_nickname" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/dp_12">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text1" android:id="@id/tv_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_nickname" />
+                    <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text2" android:id="@id/tv_nickname_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="" />
+                </LinearLayout>
+                <ImageView android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" android:src="@drawable/ic_arrow_right" />
+            </LinearLayout>
+            <View android:background="@color/color_line" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0_5" />
+            <View android:background="@color/color_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lly_account" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/dp_12">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text1" android:id="@id/tv_account_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_email" />
+                    <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text2" android:id="@id/tv_account_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="" />
+                </LinearLayout>
+                <ImageView android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" android:src="@drawable/ic_arrow_right" />
+            </LinearLayout>
+        </com.noober.background.view.BLLinearLayout>
+        <com.hjq.widget.layout.SettingBar android:id="@id/sb_change_pwd" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" app:bar_corners_bottomRadius="@dimen/dp_12" app:bar_corners_topRadius="@dimen/dp_12" app:bar_endDrawable="@drawable/ic_arrow_right" app:bar_lineMargin="@dimen/dp_1" app:bar_lineVisible="false" app:bar_solid_color="@color/color_card" app:bar_startText="@string/mine_change_password" app:bar_startTextColor="@color/color_text1" app:bar_startTextSize="@dimen/sp_15" />
+        <com.hjq.widget.layout.SettingBar android:id="@id/sb_logout" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" app:bar_corners_bottomRadius="@dimen/dp_12" app:bar_corners_topRadius="@dimen/dp_12" app:bar_endDrawable="@drawable/ic_arrow_right" app:bar_lineMargin="@dimen/dp_1" app:bar_lineVisible="false" app:bar_solid_color="@color/color_card" app:bar_startText="@string/mine_logout" app:bar_startTextColor="@color/color_text1" app:bar_startTextSize="@dimen/sp_15" />
+        <com.hjq.widget.layout.SettingBar android:id="@id/sb_delete_account" android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" app:bar_endDrawable="@drawable/ic_arrow_right" app:bar_lineMargin="@dimen/dp_1" app:bar_lineVisible="false" app:bar_startText="@string/mine_delete" app:bar_startTextColor="@color/color_text1" app:bar_startTextSize="@dimen/sp_15" app:bl_corners_radius="@dimen/dp_12" app:bl_solid_color="@color/color_card" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

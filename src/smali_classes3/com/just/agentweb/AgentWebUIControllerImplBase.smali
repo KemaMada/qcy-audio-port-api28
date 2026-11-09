@@ -1,0 +1,205 @@
+.class public Lcom/just/agentweb/AgentWebUIControllerImplBase;
+.super Lcom/just/agentweb/AbsAgentWebUIController;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/just/agentweb/AbsAgentWebUIController;-><init>()V
+
+    return-void
+.end method
+
+.method public static build()Lcom/just/agentweb/AbsAgentWebUIController;
+    .locals 1
+
+    new-instance v0, Lcom/just/agentweb/AgentWebUIControllerImplBase;
+
+    invoke-direct {v0}, Lcom/just/agentweb/AgentWebUIControllerImplBase;-><init>()V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method protected bindSupportWebParent(Lcom/just/agentweb/WebParentLayout;Landroid/app/Activity;)V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1, p2}, Lcom/just/agentweb/AbsAgentWebUIController;->bindSupportWebParent(Lcom/just/agentweb/WebParentLayout;Landroid/app/Activity;)V
+
+    return-void
+.end method
+
+.method public onCancelLoading()V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->onCancelLoading()V
+
+    return-void
+.end method
+
+.method public onForceDownloadAlert(Ljava/lang/String;Landroid/os/Handler$Callback;)V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1, p2}, Lcom/just/agentweb/AbsAgentWebUIController;->onForceDownloadAlert(Ljava/lang/String;Landroid/os/Handler$Callback;)V
+
+    return-void
+.end method
+
+.method public onJsAlert(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1, p2, p3}, Lcom/just/agentweb/AbsAgentWebUIController;->onJsAlert(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onJsConfirm(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/just/agentweb/AbsAgentWebUIController;->onJsConfirm(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)V
+
+    return-void
+.end method
+
+.method public onJsPrompt(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsPromptResult;)V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
+
+    move-result-object p0
+
+    invoke-virtual/range {p0 .. p5}, Lcom/just/agentweb/AbsAgentWebUIController;->onJsPrompt(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsPromptResult;)V
+
+    return-void
+.end method
+
+.method public onLoading(Ljava/lang/String;)V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1}, Lcom/just/agentweb/AbsAgentWebUIController;->onLoading(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onMainFrameError(Landroid/webkit/WebView;ILjava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/just/agentweb/AbsAgentWebUIController;->onMainFrameError(Landroid/webkit/WebView;ILjava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onOpenPagePrompt(Landroid/webkit/WebView;Ljava/lang/String;Landroid/os/Handler$Callback;)V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1, p2, p3}, Lcom/just/agentweb/AbsAgentWebUIController;->onOpenPagePrompt(Landroid/webkit/WebView;Ljava/lang/String;Landroid/os/Handler$Callback;)V
+
+    return-void
+.end method
+
+.method public onPermissionRequest(Landroid/webkit/PermissionRequest;)V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1}, Lcom/just/agentweb/AbsAgentWebUIController;->onPermissionRequest(Landroid/webkit/PermissionRequest;)V
+
+    return-void
+.end method
+
+.method public onPermissionsDeny([Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1, p2, p3}, Lcom/just/agentweb/AbsAgentWebUIController;->onPermissionsDeny([Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onSelectItemsPrompt(Landroid/webkit/WebView;Ljava/lang/String;[Ljava/lang/String;Landroid/os/Handler$Callback;)V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/just/agentweb/AbsAgentWebUIController;->onSelectItemsPrompt(Landroid/webkit/WebView;Ljava/lang/String;[Ljava/lang/String;Landroid/os/Handler$Callback;)V
+
+    return-void
+.end method
+
+.method public onShowMainFrame()V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->onShowMainFrame()V
+
+    return-void
+.end method
+
+.method public onShowMessage(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1, p2}, Lcom/just/agentweb/AbsAgentWebUIController;->onShowMessage(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onShowSslCertificateErrorDialog(Landroid/webkit/WebView;Landroid/webkit/SslErrorHandler;Landroid/net/http/SslError;)V
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1, p2, p3}, Lcom/just/agentweb/AbsAgentWebUIController;->onShowSslCertificateErrorDialog(Landroid/webkit/WebView;Landroid/webkit/SslErrorHandler;Landroid/net/http/SslError;)V
+
+    return-void
+.end method

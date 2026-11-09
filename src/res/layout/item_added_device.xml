@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_device_added" android:tag="layout/item_added_device_0" android:layout_width="@dimen/dp_174" android:layout_height="@dimen/dp_174" app:bl_corners_radius="@dimen/dp_12" app:bl_solid_color="@color/color_card"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_device" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_100" android:src="@drawable/ic_launcher_background" />
+    <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text1" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" />
+</com.noober.background.view.BLLinearLayout>

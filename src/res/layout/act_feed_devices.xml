@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:tag="layout/act_feed_devices_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/mine_device_added" android:paddingStart="@dimen/dp_16" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_history_devices" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:overScrollMode="never" android:paddingHorizontal="@dimen/dp_16" />
+        <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:text="@string/mine_all_equipment" android:paddingStart="@dimen/dp_16" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_all_product" android:background="@drawable/bg_card_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:overScrollMode="never" android:layout_marginHorizontal="@dimen/dp_16" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

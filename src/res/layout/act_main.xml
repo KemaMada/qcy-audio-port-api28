@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/main" android:tag="layout/act_main_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatButton android:id="@id/btn_me" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatButton android:id="@id/btn_gaodemap" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查找耳机" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/btn_me" />
+    <androidx.appcompat.widget.AppCompatButton android:id="@id/btn_product" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="产品列表" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/btn_gaodemap" />
+    <androidx.appcompat.widget.AppCompatButton android:id="@id/btn_scan" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="从首页进扫描页" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/btn_product" />
+    <androidx.appcompat.widget.AppCompatButton android:id="@id/btn_home" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="耳机首页" app:layout_constraintStart_toEndOf="@id/btn_me" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatButton android:id="@id/btn_white_noise" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="白噪音" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/btn_scan" />
+</androidx.constraintlayout.widget.ConstraintLayout>

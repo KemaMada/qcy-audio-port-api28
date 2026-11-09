@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLConstraintLayout android:id="@id/item_root" android:tag="layout/item_device_model_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/dp_8" android:layout_marginVertical="@dimen/dp_8" android:paddingVertical="@dimen/dp_20" app:bl_corners_radius="@dimen/dp_16" app:bl_solid_color="@color/color_card"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_device_icon" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_100" android:contentDescription="Device Image" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/sp_15" android:textStyle="bold" android:textColor="@color/color_text1" android:gravity="center" android:id="@id/tv_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:paddingHorizontal="@dimen/dp_16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_device_icon" />
+</com.noober.background.view.BLConstraintLayout>

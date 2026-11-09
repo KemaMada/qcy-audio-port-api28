@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/main" android:tag="layout/act_ear_btnanc_0" android:background="@color/color_bg" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/content_recycler" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp_16" app:bl_corners_radius="@dimen/dp_16" app:bl_solid_color="@color/color_card" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text3" android:id="@id/reset_btn" android:padding="@dimen/dp_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_touch_reset" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLConstraintLayout android:id="@id/item_noise_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/dp_16" android:layout_marginVertical="@dimen/dp_6" android:paddingHorizontal="@dimen/dp_16" android:paddingVertical="@dimen/dp_26" app:bl_corners_radius="@dimen/dp_16" app:bl_solid_color="@color/color_card2"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text1" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.qcy.audio.widget.BalanceAnimationView android:id="@id/v_balance" android:visibility="gone" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_12" android:layout_marginStart="@dimen/dp_8" app:layout_constraintBottom_toBottomOf="@id/tv_name" app:layout_constraintStart_toEndOf="@id/tv_name" app:layout_constraintTop_toTopOf="@id/tv_name" />
+    <ImageView android:id="@id/iv_play_state" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_noise_pop_play" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</com.noober.background.view.BLConstraintLayout>

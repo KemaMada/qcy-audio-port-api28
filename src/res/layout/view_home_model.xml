@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/view_home_model_0" android:padding="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content" fresco:bl_corners_radius="@dimen/dp_16" fresco:bl_solid_color="@color/color_card"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/color_text1" android:id="@id/title_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/model_recycler" android:layout_width="fill_parent" android:layout_height="@dimen/dp_80" android:layout_marginTop="@dimen/dp_16" />
+</LinearLayout>

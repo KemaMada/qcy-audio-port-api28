@@ -1,0 +1,61 @@
+.class public final Landroidx/core/R$attr;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/core/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "attr"
+.end annotation
+
+
+# static fields
+.field public static alpha:I = 0x7f040030
+
+.field public static font:I = 0x7f040383
+
+.field public static fontProviderAuthority:I = 0x7f040385
+
+.field public static fontProviderCerts:I = 0x7f040386
+
+.field public static fontProviderFallbackQuery:I = 0x7f040387
+
+.field public static fontProviderFetchStrategy:I = 0x7f040388
+
+.field public static fontProviderFetchTimeout:I = 0x7f040389
+
+.field public static fontProviderPackage:I = 0x7f04038a
+
+.field public static fontProviderQuery:I = 0x7f04038b
+
+.field public static fontProviderSystemFontFamily:I = 0x7f04038c
+
+.field public static fontStyle:I = 0x7f04038d
+
+.field public static fontVariationSettings:I = 0x7f04038e
+
+.field public static fontWeight:I = 0x7f04038f
+
+.field public static lStar:I = 0x7f040414
+
+.field public static nestedScrollViewStyle:I = 0x7f040537
+
+.field public static queryPatterns:I = 0x7f040588
+
+.field public static shortcutMatchRequired:I = 0x7f0405e6
+
+.field public static ttcIndex:I = 0x7f04076a
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

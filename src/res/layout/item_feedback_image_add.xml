@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLFrameLayout android:id="@id/item_add_container" android:tag="layout/item_feedback_image_add_0" android:layout_width="@dimen/dp_82" android:layout_height="@dimen/dp_82" android:layout_marginTop="@dimen/dp_4" app:bl_corners_radius="@dimen/dp_8" app:bl_solid_color="@color/color_card2"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:padding="@dimen/dp_4" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ic_add" />
+</com.noober.background.view.BLFrameLayout>

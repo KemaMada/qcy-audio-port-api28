@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/view_home_div_top_0" android:layout_width="fill_parent" android:layout_height="@dimen/dp_24"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/dp_16" fresco:bl_corners_topRadius="@dimen/dp_16" fresco:bl_solid_color="@color/color_card" fresco:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

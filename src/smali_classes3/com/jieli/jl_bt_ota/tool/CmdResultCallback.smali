@@ -1,0 +1,197 @@
+.class public Lcom/jieli/jl_bt_ota/tool/CmdResultCallback;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/jieli/jl_bt_ota/interfaces/CommandCallback;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lcom/jieli/jl_bt_ota/interfaces/CommandCallback;"
+    }
+.end annotation
+
+
+# instance fields
+.field protected final callback:Lcom/jieli/jl_bt_ota/interfaces/IActionCallback;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/jieli/jl_bt_ota/interfaces/IActionCallback<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+.field protected final funcName:Ljava/lang/String;
+
+.field protected final handle:Lcom/jieli/jl_bt_ota/interfaces/rcsp/IHandleResult;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/jieli/jl_bt_ota/interfaces/rcsp/IHandleResult<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Lcom/jieli/jl_bt_ota/interfaces/IActionCallback;Lcom/jieli/jl_bt_ota/interfaces/rcsp/IHandleResult;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Lcom/jieli/jl_bt_ota/interfaces/IActionCallback<",
+            "TT;>;",
+            "Lcom/jieli/jl_bt_ota/interfaces/rcsp/IHandleResult<",
+            "TT;>;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    if-eqz p3, :cond_0
+
+    .line 5
+    iput-object p1, p0, Lcom/jieli/jl_bt_ota/tool/CmdResultCallback;->funcName:Ljava/lang/String;
+
+    .line 6
+    iput-object p2, p0, Lcom/jieli/jl_bt_ota/tool/CmdResultCallback;->callback:Lcom/jieli/jl_bt_ota/interfaces/IActionCallback;
+
+    .line 7
+    iput-object p3, p0, Lcom/jieli/jl_bt_ota/tool/CmdResultCallback;->handle:Lcom/jieli/jl_bt_ota/interfaces/rcsp/IHandleResult;
+
+    return-void
+
+    .line 8
+    :cond_0
+    new-instance p0, Ljava/lang/NullPointerException;
+
+    const-string p1, "IHandleResult is null."
+
+    invoke-direct {p0, p1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+
+# virtual methods
+.method public onCommandResponse(Lcom/jieli/jl_bt_ota/model/base/CommandBase;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Lcom/jieli/jl_bt_ota/model/base/CommandBase;->getStatus()I
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    .line 2
+    iget-object v0, p0, Lcom/jieli/jl_bt_ota/tool/CmdResultCallback;->handle:Lcom/jieli/jl_bt_ota/interfaces/rcsp/IHandleResult;
+
+    invoke-interface {v0, p1}, Lcom/jieli/jl_bt_ota/interfaces/rcsp/IHandleResult;->hasResult(Lcom/jieli/jl_bt_ota/model/base/CommandBase;)I
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    .line 4
+    iget-object v0, p0, Lcom/jieli/jl_bt_ota/tool/CmdResultCallback;->handle:Lcom/jieli/jl_bt_ota/interfaces/rcsp/IHandleResult;
+
+    invoke-interface {v0, p1}, Lcom/jieli/jl_bt_ota/interfaces/rcsp/IHandleResult;->handleResult(Lcom/jieli/jl_bt_ota/model/base/CommandBase;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    .line 5
+    iget-object p0, p0, Lcom/jieli/jl_bt_ota/tool/CmdResultCallback;->callback:Lcom/jieli/jl_bt_ota/interfaces/IActionCallback;
+
+    if-eqz p0, :cond_0
+
+    invoke-interface {p0, p1}, Lcom/jieli/jl_bt_ota/interfaces/IActionCallback;->onSuccess(Ljava/lang/Object;)V
+
+    :cond_0
+    return-void
+
+    .line 8
+    :cond_1
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    const-string v1, "result = "
+
+    invoke-direct {p1, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    const/16 v1, 0x300a
+
+    .line 9
+    invoke-static {v1, v0, p1}, Lcom/jieli/jl_bt_ota/model/OTAError;->buildError(IILjava/lang/String;)Lcom/jieli/jl_bt_ota/model/base/BaseError;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lcom/jieli/jl_bt_ota/tool/CmdResultCallback;->onErrCode(Lcom/jieli/jl_bt_ota/model/base/BaseError;)V
+
+    return-void
+
+    .line 11
+    :cond_2
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string/jumbo v1, "status = "
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p1}, Lcom/jieli/jl_bt_ota/model/base/CommandBase;->getStatus()I
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 12
+    invoke-virtual {p1}, Lcom/jieli/jl_bt_ota/model/base/CommandBase;->getStatus()I
+
+    move-result p1
+
+    const/16 v1, 0x3008
+
+    invoke-static {v1, p1, v0}, Lcom/jieli/jl_bt_ota/model/OTAError;->buildError(IILjava/lang/String;)Lcom/jieli/jl_bt_ota/model/base/BaseError;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lcom/jieli/jl_bt_ota/tool/CmdResultCallback;->onErrCode(Lcom/jieli/jl_bt_ota/model/base/BaseError;)V
+
+    return-void
+.end method
+
+.method public onErrCode(Lcom/jieli/jl_bt_ota/model/base/BaseError;)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/jieli/jl_bt_ota/tool/CmdResultCallback;->callback:Lcom/jieli/jl_bt_ota/interfaces/IActionCallback;
+
+    if-eqz p0, :cond_0
+
+    invoke-interface {p0, p1}, Lcom/jieli/jl_bt_ota/interfaces/IActionCallback;->onError(Lcom/jieli/jl_bt_ota/model/base/BaseError;)V
+
+    :cond_0
+    return-void
+.end method

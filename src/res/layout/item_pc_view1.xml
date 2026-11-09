@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_pc_view1_0" android:paddingTop="@dimen/dp_16" android:paddingBottom="@dimen/dp_8" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.noober.background.view.BLConstraintLayout android:padding="@dimen/dp_16" android:layout_width="0.0dip" android:layout_height="wrap_content" app:bl_corners_radius="@dimen/dp_16" app:bl_solid_color="@color/color_card" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text1" android:id="@id/name_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:paddingVertical="@dimen/dp_8" app:layout_constraintEnd_toStartOf="@id/item_switch" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.qcy.audio.widget.SwitchButton2 android:layout_gravity="center" android:id="@id/item_switch" android:layout_width="@dimen/dp_33" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/name_text" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/name_text" />
+    </com.noober.background.view.BLConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

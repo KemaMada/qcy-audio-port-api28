@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLLinearLayout android:orientation="vertical" android:tag="layout/pop_after_sales_0" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp_16" app:bl_corners_radius="@dimen/dp_12" app:bl_solid_color="@color/color_float"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_17" android:textColor="@color/color_text1" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/mine_after_sales" android:paddingVertical="@dimen/dp_15" />
+    <LinearLayout android:orientation="vertical" android:id="@id/lly_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_36" />
+</com.noober.background.view.BLLinearLayout>

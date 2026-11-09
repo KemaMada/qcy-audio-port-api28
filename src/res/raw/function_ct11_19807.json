@@ -1,0 +1,1325 @@
+{
+  "buttonModel": {
+    "name": "手势",
+    "cmdID": 43,
+    "icon": "",
+    "buttons": [
+      {
+        "keyID": 1,
+        "keyName": "左耳",
+        "icon": "",
+        "keyImg": "",
+        "events": [
+          {
+            "eventID": 1,
+            "name": "单击",
+            "showTitle": "左耳单击",
+            "list": [
+              {
+                "name": "无作用",
+                "cmd": 0
+              },
+              {
+                "name": "播放\/暂停",
+                "cmd": 1
+              },
+              {
+                "name": "上一曲",
+                "cmd": 2
+              },
+              {
+                "name": "下一曲",
+                "cmd": 3
+              },
+              {
+                "name": "语音助手",
+                "cmd": 4
+              },
+              {
+                "name": "音量+",
+                "cmd": 5
+              },
+              {
+                "name": "音量-",
+                "cmd": 6
+              }
+            ],
+            "defaultFun": 0
+          },
+          {
+            "eventID": 3,
+            "name": "双击",
+            "showTitle": "左耳双击",
+            "list": [
+              {
+                "name": "无作用",
+                "cmd": 0
+              },
+              {
+                "name": "播放\/暂停",
+                "cmd": 1
+              },
+              {
+                "name": "上一曲",
+                "cmd": 2
+              },
+              {
+                "name": "下一曲",
+                "cmd": 3
+              },
+              {
+                "name": "语音助手",
+                "cmd": 4
+              },
+              {
+                "name": "音量+",
+                "cmd": 5
+              },
+              {
+                "name": "音量-",
+                "cmd": 6
+              }
+            ],
+            "defaultFun": 1
+          },
+          {
+            "eventID": 5,
+            "name": "三击",
+            "showTitle": "左耳三击",
+            "list": [
+              {
+                "name": "无作用",
+                "cmd": 0
+              },
+              {
+                "name": "播放\/暂停",
+                "cmd": 1
+              },
+              {
+                "name": "上一曲",
+                "cmd": 2
+              },
+              {
+                "name": "下一曲",
+                "cmd": 3
+              },
+              {
+                "name": "语音助手",
+                "cmd": 4
+              },
+              {
+                "name": "音量+",
+                "cmd": 5
+              },
+              {
+                "name": "音量-",
+                "cmd": 6
+              }
+            ],
+            "defaultFun": 2
+          },
+          {
+            "eventID": 9,
+            "name": "长按",
+            "list": [
+              {
+                "name": "无作用",
+                "cmd": 0
+              },
+              {
+                "name": "播放\/暂停",
+                "cmd": 1
+              },
+              {
+                "name": "上一曲",
+                "cmd": 2
+              },
+              {
+                "name": "下一曲",
+                "cmd": 3
+              },
+              {
+                "name": "语音助手",
+                "cmd": 4
+              },
+              {
+                "name": "音量+",
+                "cmd": 5
+              },
+              {
+                "name": "音量-",
+                "cmd": 6
+              }
+            ],
+            "defaultFun": 4
+          }
+        ]
+      },
+      {
+        "keyID": 2,
+        "keyName": "右耳",
+        "icon": "",
+        "keyImg": "",
+        "events": [
+          {
+            "eventID": 2,
+            "name": "单击",
+            "showTitle": "右耳单击",
+            "list": [
+              {
+                "name": "无作用",
+                "cmd": 0
+              },
+              {
+                "name": "播放\/暂停",
+                "cmd": 1
+              },
+              {
+                "name": "上一曲",
+                "cmd": 2
+              },
+              {
+                "name": "下一曲",
+                "cmd": 3
+              },
+              {
+                "name": "语音助手",
+                "cmd": 4
+              },
+              {
+                "name": "音量+",
+                "cmd": 5
+              },
+              {
+                "name": "音量-",
+                "cmd": 6
+              }
+            ],
+            "defaultFun": 0
+          },
+          {
+            "eventID": 4,
+            "name": "双击",
+            "showTitle": "右耳双击",
+            "list": [
+              {
+                "name": "无作用",
+                "cmd": 0
+              },
+              {
+                "name": "播放\/暂停",
+                "cmd": 1
+              },
+              {
+                "name": "上一曲",
+                "cmd": 2
+              },
+              {
+                "name": "下一曲",
+                "cmd": 3
+              },
+              {
+                "name": "语音助手",
+                "cmd": 4
+              },
+              {
+                "name": "音量+",
+                "cmd": 5
+              },
+              {
+                "name": "音量-",
+                "cmd": 6
+              }
+            ],
+            "defaultFun": 1
+          },
+          {
+            "eventID": 6,
+            "name": "三击",
+            "showTitle": "右耳三击",
+            "list": [
+              {
+                "name": "无作用",
+                "cmd": 0
+              },
+              {
+                "name": "播放\/暂停",
+                "cmd": 1
+              },
+              {
+                "name": "上一曲",
+                "cmd": 2
+              },
+              {
+                "name": "下一曲",
+                "cmd": 3
+              },
+              {
+                "name": "语音助手",
+                "cmd": 4
+              },
+              {
+                "name": "音量+",
+                "cmd": 5
+              },
+              {
+                "name": "音量-",
+                "cmd": 6
+              }
+            ],
+            "defaultFun": 3
+          },
+          {
+            "eventID": 10,
+            "name": "长按",
+            "list": [
+              {
+                "name": "无作用",
+                "cmd": 0
+              },
+              {
+                "name": "播放\/暂停",
+                "cmd": 1
+              },
+              {
+                "name": "上一曲",
+                "cmd": 2
+              },
+              {
+                "name": "下一曲",
+                "cmd": 3
+              },
+              {
+                "name": "语音助手",
+                "cmd": 4
+              },
+              {
+                "name": "音量+",
+                "cmd": 5
+              },
+              {
+                "name": "音量-",
+                "cmd": 6
+              }
+            ],
+            "defaultFun": 0
+          }
+        ]
+      }
+    ]
+  },
+  "eqModel": {
+    "name": "音效",
+    "cmdID": 34,
+    "icon": "",
+    "volumeLevel": 0,
+    "baseGain": -12,
+    "sysEQ": [
+      {
+        "classMac": "",
+        "eqIndex": 10,
+        "eqs": [
+          {
+            "freq": 50,
+            "gain": 0.0,
+            "q": 0.7,
+            "type": 0
+          },
+          {
+            "freq": 5500,
+            "gain": -2.5,
+            "q": 1.5,
+            "type": 2
+          },
+          {
+            "freq": 8000,
+            "gain": -6.5,
+            "q": 2.5,
+            "type": 2
+          },
+          {
+            "freq": 300,
+            "gain": -2.0,
+            "q": 0.8,
+            "type": 2
+          },
+          {
+            "freq": 1200,
+            "gain": -3.0,
+            "q": 0.9,
+            "type": 2
+          },
+          {
+            "freq": 3100,
+            "gain": 1.0,
+            "q": 1.0,
+            "type": 2
+          }
+        ],
+        "id": 0,
+        "imgBlack": "",
+        "imgBlackCheck": "",
+        "imgWhite": "",
+        "imgWhiteCheck": "",
+        "masterGain": -0.5,
+        "modelId": 0,
+        "name": "空间音效",
+        "onlyTws": false,
+        "otherMac": "",
+        "subTitle": "立体环绕，营造沉浸氛围",
+        "use": false,
+        "userId": 0
+      },
+      {
+        "name": "默认",
+        "subTitle": "均衡自然，适合日常聆听",
+        "eqIndex": 1,
+        "masterGain": -4.5,
+        "eqs": [
+          {
+            "freq": 50,
+            "gain": 0,
+            "type": 0,
+            "q": 1
+          },
+          {
+            "freq": 85,
+            "gain": 2.5,
+            "type": 2,
+            "q": 0.9
+          },
+          {
+            "freq": 220,
+            "gain": -3.5,
+            "type": 2,
+            "q": 1
+          },
+          {
+            "freq": 544,
+            "gain": -1.2,
+            "type": 2,
+            "q": 0.8
+          },
+          {
+            "freq": 1100,
+            "gain": -2,
+            "type": 2,
+            "q": 2
+          },
+          {
+            "freq": 2800,
+            "gain": -3,
+            "type": 2,
+            "q": 3
+          },
+          {
+            "freq": 9000,
+            "gain": -6,
+            "type": 2,
+            "q": 3
+          },
+          {
+            "freq": 12000,
+            "gain": -10,
+            "type": 2,
+            "q": 3
+          }
+        ]
+      },
+      {
+        "name": "流行",
+        "subTitle": "节奏鲜明，旋律更抓耳",
+        "eqIndex": 2,
+        "masterGain": -4.5,
+        "eqs": [
+          {
+            "freq": 80,
+            "gain": -5,
+            "type": 0,
+            "q": 0.75
+          },
+          {
+            "freq": 200,
+            "gain": -6,
+            "type": 2,
+            "q": 0.8
+          },
+          {
+            "freq": 400,
+            "gain": 2,
+            "type": 2,
+            "q": 1
+          },
+          {
+            "freq": 900,
+            "gain": 3,
+            "type": 2,
+            "q": 0.8
+          },
+          {
+            "freq": 3200,
+            "gain": -7,
+            "type": 2,
+            "q": 3
+          },
+          {
+            "freq": 3700,
+            "gain": -4,
+            "type": 2,
+            "q": 2
+          },
+          {
+            "freq": 9500,
+            "gain": -16,
+            "type": 2,
+            "q": 3.5
+          },
+          {
+            "freq": 11000,
+            "gain": -5,
+            "type": 2,
+            "q": 4
+          }
+        ]
+      },
+      {
+        "name": "重低音",
+        "subTitle": "低频澎湃，震撼有力",
+        "eqIndex": 3,
+        "masterGain": -4.5,
+        "eqs": [
+          {
+            "freq": 50,
+            "gain": 0,
+            "type": 0,
+            "q": 0.9
+          },
+          {
+            "freq": 80,
+            "gain": 2,
+            "type": 2,
+            "q": 0.7
+          },
+          {
+            "freq": 250,
+            "gain": -8,
+            "type": 2,
+            "q": 1.5
+          },
+          {
+            "freq": 400,
+            "gain": -2.5,
+            "type": 2,
+            "q": 0.6
+          },
+          {
+            "freq": 3200,
+            "gain": -11,
+            "type": 2,
+            "q": 3
+          },
+          {
+            "freq": 3700,
+            "gain": -7,
+            "type": 2,
+            "q": 2
+          },
+          {
+            "freq": 9500,
+            "gain": -10,
+            "type": 2,
+            "q": 4
+          },
+          {
+            "freq": 11000,
+            "gain": -5,
+            "type": 2,
+            "q": 4
+          }
+        ]
+      },
+      {
+        "name": "摇滚",
+        "subTitle": "鼓点强烈，激情澎湃",
+        "eqIndex": 4,
+        "masterGain": -4.5,
+        "eqs": [
+          {
+            "freq": 80,
+            "gain": 0,
+            "type": 0,
+            "q": 0.75
+          },
+          {
+            "freq": 200,
+            "gain": 3,
+            "type": 2,
+            "q": 0.75
+          },
+          {
+            "freq": 250,
+            "gain": -1,
+            "type": 2,
+            "q": 1
+          },
+          {
+            "freq": 400,
+            "gain": -2.5,
+            "type": 2,
+            "q": 1
+          },
+          {
+            "freq": 3200,
+            "gain": -7,
+            "type": 2,
+            "q": 2
+          },
+          {
+            "freq": 3700,
+            "gain": -3,
+            "type": 2,
+            "q": 2
+          },
+          {
+            "freq": 9500,
+            "gain": -10,
+            "type": 2,
+            "q": 4
+          },
+          {
+            "freq": 11000,
+            "gain": -5,
+            "type": 2,
+            "q": 4
+          }
+        ]
+      },
+      {
+        "name": "柔和",
+        "subTitle": "音色温润，舒缓耐听",
+        "eqIndex": 5,
+        "masterGain": -4.5,
+        "eqs": [
+          {
+            "freq": 80,
+            "gain": -5,
+            "type": 0,
+            "q": 0.75
+          },
+          {
+            "freq": 250,
+            "gain": -1,
+            "type": 2,
+            "q": 1
+          },
+          {
+            "freq": 400,
+            "gain": 2,
+            "type": 2,
+            "q": 1
+          },
+          {
+            "freq": 3200,
+            "gain": -7,
+            "type": 2,
+            "q": 3.5
+          },
+          {
+            "freq": 3700,
+            "gain": -6,
+            "type": 2,
+            "q": 3
+          },
+          {
+            "freq": 5500,
+            "gain": -3,
+            "type": 2,
+            "q": 3
+          },
+          {
+            "freq": 9200,
+            "gain": -10,
+            "type": 2,
+            "q": 3.5
+          },
+          {
+            "freq": 11000,
+            "gain": -7,
+            "type": 2,
+            "q": 4
+          }
+        ]
+      },
+      {
+        "name": "古典",
+        "subTitle": "层次分明，细节丰富",
+        "eqIndex": 6,
+        "masterGain": -4.5,
+        "eqs": [
+          {
+            "freq": 80,
+            "gain": 0,
+            "type": 0,
+            "q": 0.75
+          },
+          {
+            "freq": 200,
+            "gain": 3,
+            "type": 2,
+            "q": 0.7
+          },
+          {
+            "freq": 400,
+            "gain": -4,
+            "type": 2,
+            "q": 0.7
+          },
+          {
+            "freq": 900,
+            "gain": -3,
+            "type": 2,
+            "q": 1
+          },
+          {
+            "freq": 3200,
+            "gain": -8,
+            "type": 2,
+            "q": 2
+          },
+          {
+            "freq": 3700,
+            "gain": -5,
+            "type": 2,
+            "q": 3
+          },
+          {
+            "freq": 5500,
+            "gain": -3,
+            "type": 2,
+            "q": 3
+          },
+          {
+            "freq": 9200,
+            "gain": -8,
+            "type": 2,
+            "q": 4
+          }
+        ]
+      },
+      {
+        "name": "柔和沉浸",
+        "subTitle": "温暖包裹，沉浸体验",
+        "eqIndex": 15,
+        "masterGain": -4.5,
+        "eqs": [
+          {
+            "freq": 50,
+            "gain": 0,
+            "type": 0,
+            "q": 0.7
+          },
+          {
+            "freq": 140,
+            "gain": -2,
+            "type": 2,
+            "q": 0.75
+          },
+          {
+            "freq": 300,
+            "gain": -3.5,
+            "type": 2,
+            "q": 0.8
+          },
+          {
+            "freq": 1200,
+            "gain": 0,
+            "type": 2,
+            "q": 0.9
+          },
+          {
+            "freq": 3100,
+            "gain": 0,
+            "type": 2,
+            "q": 1
+          },
+          {
+            "freq": 5500,
+            "gain": -5,
+            "type": 2,
+            "q": 1.5
+          },
+          {
+            "freq": 8000,
+            "gain": -6.5,
+            "type": 2,
+            "q": 2.5
+          }
+        ]
+      },
+      {
+        "name": "原音增强",
+        "subTitle": "还原细节，音质更真实",
+        "eqIndex": 16,
+        "masterGain": -4.5,
+        "eqs": [
+          {
+            "freq": 80,
+            "gain": -3,
+            "type": 0,
+            "q": 0.75
+          },
+          {
+            "freq": 250,
+            "gain": -8,
+            "type": 2,
+            "q": 1.5
+          },
+          {
+            "freq": 500,
+            "gain": -8,
+            "type": 2,
+            "q": 1.5
+          },
+          {
+            "freq": 3200,
+            "gain": -7,
+            "type": 2,
+            "q": 3.5
+          },
+          {
+            "freq": 3700,
+            "gain": -3,
+            "type": 2,
+            "q": 3
+          },
+          {
+            "freq": 6300,
+            "gain": -3,
+            "type": 2,
+            "q": 4
+          },
+          {
+            "freq": 9200,
+            "gain": -10,
+            "type": 2,
+            "q": 4
+          },
+          {
+            "freq": 12000,
+            "gain": -7,
+            "type": 2,
+            "q": 2
+          }
+        ]
+      },
+      {
+        "name": "纯净人声",
+        "subTitle": "人声清晰，情感更突出",
+        "eqIndex": 17,
+        "masterGain": -4.5,
+        "eqs": [
+          {
+            "freq": 120,
+            "gain": -5,
+            "type": 0,
+            "q": 0.75
+          },
+          {
+            "freq": 250,
+            "gain": -6,
+            "type": 2,
+            "q": 0.7
+          },
+          {
+            "freq": 400,
+            "gain": -1,
+            "type": 2,
+            "q": 0.6
+          },
+          {
+            "freq": 3700,
+            "gain": -5,
+            "type": 2,
+            "q": 3
+          },
+          {
+            "freq": 5500,
+            "gain": -3,
+            "type": 2,
+            "q": 3
+          },
+          {
+            "freq": 6300,
+            "gain": -2,
+            "type": 2,
+            "q": 4
+          },
+          {
+            "freq": 9200,
+            "gain": -10,
+            "type": 2,
+            "q": 4
+          },
+          {
+            "freq": 11000,
+            "gain": -8,
+            "type": 2,
+            "q": 2
+          }
+        ]
+      }
+    ],
+    "individuation_eq": {
+      "eqIndex": 11,
+      "masterGain": -3,
+      "name": "个性化听感",
+      "eqs": [
+        {
+          "freq": 63,
+          "gain": 2,
+          "type": 2,
+          "q": 0.7,
+          "soundDB": -65.3
+        },
+        {
+          "freq": 125,
+          "gain": 2,
+          "type": 2,
+          "q": 0.7,
+          "soundDB": -68.0
+        },
+        {
+          "freq": 250,
+          "gain": 2,
+          "type": 2,
+          "q": 0.7,
+          "soundDB": -72.6
+        },
+        {
+          "freq": 500,
+          "gain": 2,
+          "type": 2,
+          "q": 0.7,
+          "soundDB": -80.7
+        },
+        {
+          "freq": 1000,
+          "gain": 2,
+          "type": 2,
+          "q": 0.7,
+          "soundDB": -86.9
+        },
+        {
+          "freq": 2000,
+          "gain": 2,
+          "type": 2,
+          "q": 0.7,
+          "soundDB": -90.3
+        },
+        {
+          "freq": 4000,
+          "gain": 2,
+          "type": 2,
+          "q": 0.7,
+          "soundDB": -90.4
+        },
+        {
+          "freq": 8000,
+          "gain": 2,
+          "type": 2,
+          "q": 0.7,
+          "soundDB": -81.6
+        }
+      ]
+    }
+  },
+  "findEar": {
+    "name": "查找耳机",
+    "cmdID": 75,
+    "icon": ""
+  },
+  "thxEq": {
+    "name": "THX音效",
+    "subTitle": "THX认证调音，进一步提升音乐沉浸感与声场",
+    "cmdID": 99,
+    "icon": ""
+  },
+  "balanceModel": {
+    "name": "声道平衡",
+    "cmdID": 22
+  },
+  "promptVolume": {
+    "name": "提示音音量",
+    "subTitle": "",
+    "cmdID": 29,
+    "icon": "",
+    "subItems": [
+      {
+        "cmdHex": "0700",
+        "index": 7,
+        "name": "最小音量"
+      },
+      {
+        "cmdHex": "0A00",
+        "index": 10,
+        "name": "中等音量"
+      },
+      {
+        "cmdHex": "0B00",
+        "index": 11,
+        "name": "较大音量"
+      },
+      {
+        "cmdHex": "0D00",
+        "index": 13,
+        "name": "最大音量"
+      }
+    ]
+  },
+  "ldacModel": {
+    "name": "LDAC",
+    "subTitle": "打开/关闭时耳机将会自动重启",
+    "cmdID": 35,
+    "icon": ""
+  },
+  "disconnectPowerOff": {
+    "name": "断连后关机",
+    "subTitle": "",
+    "cmdID": 31,
+    "icon": "",
+    "subItems": [
+      {
+        "cmdHex": "0500",
+        "name": "5分钟",
+        "index": 5
+      },
+      {
+        "cmdHex": "0A00",
+        "name": "10分钟",
+        "index": 10
+      },
+      {
+        "cmdHex": "1E00",
+        "name": "30分钟",
+        "index": 30
+      },
+      {
+        "cmdHex": "3C00",
+        "name": "60分钟",
+        "index": 60
+      },
+      {
+        "cmdHex": "FFFF",
+        "name": "不关机",
+        "index": 65535
+      }
+    ]
+  },
+  "autoPowerOff": {
+    "name": "定时关机",
+    "subTitle": "",
+    "type": 4,
+    "cmdID": 20,
+    "icon": "",
+    "subItems": [
+      {
+        "cmdHex": "FFFF",
+        "name": "不开启",
+        "index": 65535
+      },
+      {
+        "cmdHex": "0F00",
+        "name": "15分钟",
+        "index": 15
+      },
+      {
+        "cmdHex": "1E00",
+        "name": "30分钟",
+        "index": 30
+      },
+      {
+        "cmdHex": "3C00",
+        "name": "60分钟",
+        "index": 60
+      },
+      {
+        "cmdHex": "5A00",
+        "name": "90分钟",
+        "index": 90
+      }
+    ]
+  },
+  "autoVolume": {
+    "name": "自适应音量",
+    "subTitle": "根据环境自动调整音量，开启后将缩短续航时间",
+    "cmdID": 64,
+    "icon": ""
+  },
+  "gameMode": {
+    "name": "游戏模式",
+    "subTitle": "降低打游戏时的声音延迟",
+    "cmdID": 9,
+    "icon": ""
+  },
+  "adaptEQ": {
+    "name": "动态EQ",
+    "subTitle": "实时调整音效，优化音质体验",
+    "cmdID": 39,
+    "icon": ""
+  },
+  "dualConnect": {
+    "name": "双设备连接",
+    "subTitle": "耳机可以同时连接两台蓝牙设备",
+    "cmdID": 36,
+    "icon": ""
+  },
+  "deviceColor": {
+    "name": "设备颜色",
+    "cmdID": 66
+  },
+  "privacyModePro": {
+    "name": "隐私模式",
+    "subTitle": "有效降低漏音，听音更私密",
+    "cmdID": 95,
+    "subItems": [
+      {
+        "index": 0,
+        "name": "通话和音乐"
+      },
+      {
+        "index": 1,
+        "name": "仅通话"
+      }
+    ]
+  },
+  "disconnectWarn": {
+    "name": "断连提醒",
+    "subTitle": "当一侧耳机断开连接时，另一侧耳机将播放提示音",
+    "cmdID": 93
+  },
+  "upgrade": {
+    "name": "固件升级",
+    "cmdID": 48,
+    "otaType": 10
+  },
+  "resetModel": {
+    "name": "恢复默认",
+    "alertMsg": "你确定要恢复默认设置吗？恢复后耳机的所有设置将被重置。 请先将左右耳耳机取下并放在一起。",
+    "cmdID": 1
+  },
+  "deviceInfo": {
+    "name": "设备信息",
+    "cmdID": -2
+  },
+  "aiModel": {
+    "name": "AI",
+    "subTitle": "智能语音·高效协作·随时沟通",
+    "cmdID": 67,
+    "icon": ""
+  },
+  "touchEnable": {
+    "name": "手势控制",
+    "subTitle": "",
+    "cmdID": 16,
+    "icon": ""
+  },
+  "popViewRules": {
+    "name": "耳机功能弹窗规则",
+    "cmdID": -1003,
+    "subTitle": "",
+    "rules": [
+      {
+        "action": "toast",
+        "btnCancel": "",
+        "btnOK": "",
+        "constraints": [
+          {
+            "compareType": "==",
+            "expectCID": 95,
+            "expectName": "privacyModePro",
+            "expectValue": 1,
+            "reboot": false,
+            "showName": ""
+          }
+        ],
+        "message1": "请先关闭隐私模式",
+        "message2": "",
+        "targetCID": 34,
+        "targetValue": 0,
+        "title": ""
+      },
+      {
+        "action": "toast",
+        "btnCancel": "",
+        "btnOK": "",
+        "constraints": [
+          {
+            "compareType": "==",
+            "expectCID": 99,
+            "expectName": "thxEq",
+            "expectValue": 1,
+            "reboot": false,
+            "showName": ""
+          }
+        ],
+        "message1": "请先关闭THX音效",
+        "message2": "",
+        "targetCID": 34,
+        "targetValue": 0,
+        "title": ""
+      },
+      {
+        "targetCID": 95,
+        "targetValue": 1,
+        "action": "bottomDialog",
+        "title": "提示",
+        "message1": "为提供最佳使用体验，开启将关闭以下功能。",
+        "message2": "同时耳机将会自动重启。",
+        "btnOK": "开启",
+        "btnCancel": "取消",
+        "constraints": [
+          {
+            "expectName": "thxEq",
+            "expectCID": 99,
+            "expectValue": 1,
+            "compareType": "==",
+            "reboot": false
+          }
+        ]
+      },
+      {
+        "targetCID": 39,
+        "targetValue": 1,
+        "action": "bottomDialog",
+        "title": "提示",
+        "message1": "为提供最佳使用体验，开启将关闭以下功能。",
+        "message2": "同时耳机将会自动重启。",
+        "btnOK": "开启",
+        "btnCancel": "取消",
+        "constraints": [
+          {
+            "expectName": "thxEq",
+            "expectCID": 99,
+            "expectValue": 1,
+            "compareType": "==",
+            "reboot": false
+          }
+        ]
+      },
+      {
+        "targetCID": 99,
+        "targetValue": 1,
+        "action": "bottomDialog",
+        "title": "提示",
+        "message1": "为提供最佳使用体验，开启将关闭以下功能。",
+        "message2": "同时耳机将会自动重启。",
+        "btnOK": "开启",
+        "btnCancel": "取消",
+        "constraints": [
+          {
+            "expectName": "privacyModePro",
+            "expectCID": 95,
+            "expectValue": 1,
+            "compareType": "==",
+            "reboot": false
+          },
+          {
+            "expectName": "adaptEQ",
+            "expectCID": 39,
+            "expectValue": 1,
+            "compareType": "==",
+            "reboot": false
+          }
+        ]
+      },
+      {
+        "targetCID": 35,
+        "targetValue": 1,
+        "action": "bottomDialog",
+        "title": "提示",
+        "message1": "为提供最佳使用体验，开启将关闭以下功能。",
+        "message2": "同时耳机将会自动重启。",
+        "btnOK": "开启",
+        "btnCancel": "取消",
+        "constraints": [
+          {
+            "expectName": "dualConnect",
+            "expectCID": 36,
+            "expectValue": 1,
+            "compareType": "==",
+            "reboot": true
+          },
+          {
+            "expectName": "gameMode",
+            "expectCID": 9,
+            "expectValue": 1,
+            "compareType": "==",
+            "reboot": true
+          }
+        ]
+      },
+      {
+        "targetCID": 36,
+        "targetValue": 1,
+        "action": "bottomDialog",
+        "title": "提示",
+        "message1": "为提供最佳使用体验，开启将关闭以下功能。",
+        "message2": "同时耳机将会自动重启。",
+        "btnOK": "开启",
+        "btnCancel": "取消",
+        "constraints": [
+          {
+            "expectName": "ldacModel",
+            "expectCID": 35,
+            "expectValue": 1,
+            "compareType": "==",
+            "reboot": true
+          }
+        ]
+      },
+      {
+        "targetCID": 9,
+        "targetValue": 1,
+        "action": "bottomDialog",
+        "title": "提示",
+        "message1": "为提供最佳使用体验，开启将关闭以下功能。",
+        "message2": "同时耳机将会自动重启。",
+        "btnOK": "开启",
+        "btnCancel": "取消",
+        "constraints": [
+          {
+            "expectName": "ldacModel",
+            "expectCID": 35,
+            "expectValue": 1,
+            "compareType": "==",
+            "reboot": true
+          }
+        ]
+      },
+      {
+        "targetCID": 9,
+        "action": "bottomDialog",
+        "title": "需要重启耳机",
+        "message1": "打开/关闭时，耳机将会自动重启。",
+        "btnOK": "重新启动",
+        "btnCancel": "取消"
+      },
+      {
+        "targetCID": 35,
+        "action": "bottomDialog",
+        "title": "需要重启耳机",
+        "message1": "打开/关闭时，耳机将会自动重启。",
+        "btnOK": "重新启动",
+        "btnCancel": "取消"
+      },
+      {
+        "targetCID": 36,
+        "action": "bottomDialog",
+        "title": "需要重启耳机",
+        "message1": "打开/关闭时，耳机将会自动重启。",
+        "btnOK": "重新启动",
+        "btnCancel": "取消"
+      }
+    ]
+  }
+}

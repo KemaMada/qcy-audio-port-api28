@@ -1,0 +1,455 @@
+.class Lcom/lxj/xpopup/core/AttachPopupView$4;
+.super Ljava/lang/Object;
+.source "AttachPopupView.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/lxj/xpopup/core/AttachPopupView;->doAttach()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+.field final synthetic val$isRTL:Z
+
+.field final synthetic val$rect:Landroid/graphics/Rect;
+
+
+# direct methods
+.method constructor <init>(Lcom/lxj/xpopup/core/AttachPopupView;ZLandroid/graphics/Rect;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$rect",
+            "val$isRTL"
+        }
+    .end annotation
+
+    .line 241
+    iput-object p1, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    iput-boolean p2, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->val$isRTL:Z
+
+    iput-object p3, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->val$rect:Landroid/graphics/Rect;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 5
+
+    .line 244
+    iget-object v0, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    iget-object v0, v0, Lcom/lxj/xpopup/core/AttachPopupView;->popupInfo:Lcom/lxj/xpopup/core/PopupInfo;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    .line 245
+    :cond_0
+    iget-boolean v0, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->val$isRTL:Z
+
+    if-eqz v0, :cond_2
+
+    .line 246
+    iget-object v0, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    iget-boolean v1, v0, Lcom/lxj/xpopup/core/AttachPopupView;->isShowLeft:Z
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    invoke-virtual {v1}, Lcom/lxj/xpopup/core/AttachPopupView;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/lxj/xpopup/util/XPopupUtils;->getAppWidth(Landroid/content/Context;)I
+
+    move-result v1
+
+    iget-object v2, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->val$rect:Landroid/graphics/Rect;
+
+    iget v2, v2, Landroid/graphics/Rect;->left:I
+
+    sub-int/2addr v1, v2
+
+    iget-object v2, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    invoke-virtual {v2}, Lcom/lxj/xpopup/core/AttachPopupView;->getPopupContentView()Landroid/view/View;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v2
+
+    sub-int/2addr v1, v2
+
+    iget-object v2, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    iget v2, v2, Lcom/lxj/xpopup/core/AttachPopupView;->defaultOffsetX:I
+
+    sub-int/2addr v1, v2
+
+    goto :goto_0
+
+    :cond_1
+    iget-object v1, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    .line 247
+    invoke-virtual {v1}, Lcom/lxj/xpopup/core/AttachPopupView;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/lxj/xpopup/util/XPopupUtils;->getAppWidth(Landroid/content/Context;)I
+
+    move-result v1
+
+    iget-object v2, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->val$rect:Landroid/graphics/Rect;
+
+    iget v2, v2, Landroid/graphics/Rect;->right:I
+
+    sub-int/2addr v1, v2
+
+    iget-object v2, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    iget v2, v2, Lcom/lxj/xpopup/core/AttachPopupView;->defaultOffsetX:I
+
+    add-int/2addr v1, v2
+
+    :goto_0
+    neg-int v1, v1
+
+    int-to-float v1, v1
+
+    iput v1, v0, Lcom/lxj/xpopup/core/AttachPopupView;->translationX:F
+
+    goto :goto_2
+
+    .line 249
+    :cond_2
+    iget-object v0, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    iget-boolean v1, v0, Lcom/lxj/xpopup/core/AttachPopupView;->isShowLeft:Z
+
+    if-eqz v1, :cond_3
+
+    iget-object v1, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->val$rect:Landroid/graphics/Rect;
+
+    iget v1, v1, Landroid/graphics/Rect;->left:I
+
+    iget-object v2, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    iget v2, v2, Lcom/lxj/xpopup/core/AttachPopupView;->defaultOffsetX:I
+
+    add-int/2addr v1, v2
+
+    goto :goto_1
+
+    :cond_3
+    iget-object v1, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->val$rect:Landroid/graphics/Rect;
+
+    iget v1, v1, Landroid/graphics/Rect;->right:I
+
+    iget-object v2, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    invoke-virtual {v2}, Lcom/lxj/xpopup/core/AttachPopupView;->getPopupContentView()Landroid/view/View;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v2
+
+    sub-int/2addr v1, v2
+
+    iget-object v2, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    iget v2, v2, Lcom/lxj/xpopup/core/AttachPopupView;->defaultOffsetX:I
+
+    sub-int/2addr v1, v2
+
+    :goto_1
+    int-to-float v1, v1
+
+    iput v1, v0, Lcom/lxj/xpopup/core/AttachPopupView;->translationX:F
+
+    .line 251
+    :goto_2
+    iget-object v0, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    iget-object v0, v0, Lcom/lxj/xpopup/core/AttachPopupView;->popupInfo:Lcom/lxj/xpopup/core/PopupInfo;
+
+    iget-boolean v0, v0, Lcom/lxj/xpopup/core/PopupInfo;->isCenterHorizontal:Z
+
+    if-eqz v0, :cond_7
+
+    .line 253
+    iget-object v0, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    iget-boolean v0, v0, Lcom/lxj/xpopup/core/AttachPopupView;->isShowLeft:Z
+
+    const/high16 v1, 0x40000000    # 2.0f
+
+    if-eqz v0, :cond_5
+
+    .line 254
+    iget-boolean v0, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->val$isRTL:Z
+
+    if-eqz v0, :cond_4
+
+    .line 255
+    iget-object v0, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    iget v2, v0, Lcom/lxj/xpopup/core/AttachPopupView;->translationX:F
+
+    iget-object v3, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->val$rect:Landroid/graphics/Rect;
+
+    invoke-virtual {v3}, Landroid/graphics/Rect;->width()I
+
+    move-result v3
+
+    iget-object v4, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    invoke-virtual {v4}, Lcom/lxj/xpopup/core/AttachPopupView;->getPopupContentView()Landroid/view/View;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v4
+
+    sub-int/2addr v3, v4
+
+    int-to-float v3, v3
+
+    div-float/2addr v3, v1
+
+    sub-float/2addr v2, v3
+
+    iput v2, v0, Lcom/lxj/xpopup/core/AttachPopupView;->translationX:F
+
+    goto :goto_3
+
+    .line 257
+    :cond_4
+    iget-object v0, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    iget v2, v0, Lcom/lxj/xpopup/core/AttachPopupView;->translationX:F
+
+    iget-object v3, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->val$rect:Landroid/graphics/Rect;
+
+    invoke-virtual {v3}, Landroid/graphics/Rect;->width()I
+
+    move-result v3
+
+    iget-object v4, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    invoke-virtual {v4}, Lcom/lxj/xpopup/core/AttachPopupView;->getPopupContentView()Landroid/view/View;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v4
+
+    sub-int/2addr v3, v4
+
+    int-to-float v3, v3
+
+    div-float/2addr v3, v1
+
+    add-float/2addr v2, v3
+
+    iput v2, v0, Lcom/lxj/xpopup/core/AttachPopupView;->translationX:F
+
+    goto :goto_3
+
+    .line 260
+    :cond_5
+    iget-boolean v0, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->val$isRTL:Z
+
+    if-eqz v0, :cond_6
+
+    .line 261
+    iget-object v0, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    iget v2, v0, Lcom/lxj/xpopup/core/AttachPopupView;->translationX:F
+
+    iget-object v3, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->val$rect:Landroid/graphics/Rect;
+
+    invoke-virtual {v3}, Landroid/graphics/Rect;->width()I
+
+    move-result v3
+
+    iget-object v4, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    invoke-virtual {v4}, Lcom/lxj/xpopup/core/AttachPopupView;->getPopupContentView()Landroid/view/View;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v4
+
+    sub-int/2addr v3, v4
+
+    int-to-float v3, v3
+
+    div-float/2addr v3, v1
+
+    add-float/2addr v2, v3
+
+    iput v2, v0, Lcom/lxj/xpopup/core/AttachPopupView;->translationX:F
+
+    goto :goto_3
+
+    .line 263
+    :cond_6
+    iget-object v0, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    iget v2, v0, Lcom/lxj/xpopup/core/AttachPopupView;->translationX:F
+
+    iget-object v3, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->val$rect:Landroid/graphics/Rect;
+
+    invoke-virtual {v3}, Landroid/graphics/Rect;->width()I
+
+    move-result v3
+
+    iget-object v4, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    invoke-virtual {v4}, Lcom/lxj/xpopup/core/AttachPopupView;->getPopupContentView()Landroid/view/View;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v4
+
+    sub-int/2addr v3, v4
+
+    int-to-float v3, v3
+
+    div-float/2addr v3, v1
+
+    sub-float/2addr v2, v3
+
+    iput v2, v0, Lcom/lxj/xpopup/core/AttachPopupView;->translationX:F
+
+    .line 267
+    :cond_7
+    :goto_3
+    iget-object v0, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    invoke-virtual {v0}, Lcom/lxj/xpopup/core/AttachPopupView;->isShowUpToTarget()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_8
+
+    .line 270
+    iget-object v0, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    iget-object v1, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->val$rect:Landroid/graphics/Rect;
+
+    iget v1, v1, Landroid/graphics/Rect;->top:I
+
+    iget-object v2, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    invoke-virtual {v2}, Lcom/lxj/xpopup/core/AttachPopupView;->getPopupContentView()Landroid/view/View;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/view/View;->getMeasuredHeight()I
+
+    move-result v2
+
+    sub-int/2addr v1, v2
+
+    iget-object v2, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    iget v2, v2, Lcom/lxj/xpopup/core/AttachPopupView;->defaultOffsetY:I
+
+    sub-int/2addr v1, v2
+
+    int-to-float v1, v1
+
+    iput v1, v0, Lcom/lxj/xpopup/core/AttachPopupView;->translationY:F
+
+    goto :goto_4
+
+    .line 272
+    :cond_8
+    iget-object v0, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    iget-object v1, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->val$rect:Landroid/graphics/Rect;
+
+    iget v1, v1, Landroid/graphics/Rect;->bottom:I
+
+    iget-object v2, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    iget v2, v2, Lcom/lxj/xpopup/core/AttachPopupView;->defaultOffsetY:I
+
+    add-int/2addr v1, v2
+
+    int-to-float v1, v1
+
+    iput v1, v0, Lcom/lxj/xpopup/core/AttachPopupView;->translationY:F
+
+    .line 275
+    :goto_4
+    iget-object v0, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    invoke-virtual {v0}, Lcom/lxj/xpopup/core/AttachPopupView;->getPopupContentView()Landroid/view/View;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    iget v1, v1, Lcom/lxj/xpopup/core/AttachPopupView;->translationX:F
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationX(F)V
+
+    .line 276
+    iget-object v0, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    invoke-virtual {v0}, Lcom/lxj/xpopup/core/AttachPopupView;->getPopupContentView()Landroid/view/View;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    iget v1, v1, Lcom/lxj/xpopup/core/AttachPopupView;->translationY:F
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationY(F)V
+
+    .line 277
+    iget-object p0, p0, Lcom/lxj/xpopup/core/AttachPopupView$4;->this$0:Lcom/lxj/xpopup/core/AttachPopupView;
+
+    invoke-virtual {p0}, Lcom/lxj/xpopup/core/AttachPopupView;->initAndStartAnimation()V
+
+    return-void
+.end method

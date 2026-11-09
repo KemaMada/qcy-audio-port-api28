@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="@dimen/dp_60" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bl_corners_topRadius="@dimen/dp_12" app:bl_solid_color="@color/color_card"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_17" android:textColor="@color/color_text1" android:id="@id/title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_17" android:text="@string/home_color_change" android:layout_marginStart="@dimen/dp_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/close_imageview" android:padding="@dimen/dp_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close" android:layout_marginEnd="@dimen/dp_6" app:layout_constraintBottom_toBottomOf="@id/title_textview" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/title_textview" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/content_recyclerview" android:layout_width="fill_parent" android:layout_height="@dimen/dp_216" android:layout_marginTop="@dimen/dp_16" app:layout_constraintTop_toBottomOf="@id/close_imageview" />
+</androidx.constraintlayout.widget.ConstraintLayout>

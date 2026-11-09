@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLLinearLayout android:orientation="vertical" android:tag="layout/pop_location_time_0" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp_16" android:paddingVertical="@dimen/dp_24" app:bl_corners_topLeftRadius="@dimen/dp_12" app:bl_corners_topRightRadius="@dimen/dp_12" app:bl_solid_color="@color/color_float"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_15" android:textColor="@color/color_text1" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/home_find_location_tip" />
+    <com.noober.background.view.BLTextView android:textSize="@dimen/sp_15" android:textStyle="bold" android:textColor="@color/color_text1" android:gravity="center" android:id="@id/btn_close" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:text="@string/home_find_close" android:textAllCaps="false" android:paddingVertical="@dimen/dp_12" app:bl_corners_radius="@dimen/dp_12" app:bl_solid_color="@color/color_card2" />
+</com.noober.background.view.BLLinearLayout>
